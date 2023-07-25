@@ -1,0 +1,78 @@
+/* Author: Poyan Payandeh
+    Student ID: SWM6076
+   CSS styles for admin.html */
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+body {
+  font-family: "Lora", serif;
+  background-color: #DDD0C8;
+  font-size: 16px;
+  color: #323232;
+}
+
+button {
+    background-color: #DDD0C8;
+    color: #323232;   
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 90%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    border-radius: 12px;
+    border: none;
+    color: #DDD0C8;
+    background-color: #323232;
+    height: 30px;
+    width: 200px;
+}
+
+.submit {
+    border-radius: 20px;   
+    width: 75px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    opacity: 90%;
+}
+
+.error {
+    color: darkred;
+    display: none;
+}
+
+table, th, td {
+    border:2px solid #DDD0C8;
+    background-color: #323232;
+    color: #DDD0C8;
+}
+
+.content {
+    display: none;
+}
+
+.abtn {
+    background-color: #323232;
+    color: #DDD0C8;
+    cursor: pointer;
+}
+
+.abtn:hover {
+    opacity: 90%;
+}
+
+.assignMsg {
+    color:green;
+    display: none;
+}

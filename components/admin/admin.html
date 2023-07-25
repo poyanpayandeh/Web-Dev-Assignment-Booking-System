@@ -1,0 +1,38 @@
+<!-- Author: Poyan Payandeh
+Student ID: SWM6076
+This file provides the client the user interace to interact with admin.js fiile -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CabsOnline - Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1 class="header">Cabs Online - Admin</h1>
+    <hr>
+    <p>Enter Booking Number or leave blank:</p>
+    <label>BRN- <input type="text" name="bsearch" maxlength="5" onkeypress="isInputNumber(event)" id="bsearch"/></label>
+    <input type="button" name="sbutton" value="Search" class="submit" id="sbutton"/>
+    <p class="error" id="errorMsg"></p>
+    <br>
+    <br>
+    <div class="content" id="content">
+        <table class="table">
+            <th>Booking Refrence Number</th>
+            <th>Customer Name</th>
+            <th>Phone</th>
+            <th>Pickup Suburb</th>
+            <th>Destination Suburb</th>
+            <th>Pickup Date and Time</th>
+            <th>Status</th>
+            <th>Assign</th>
+            <tbody id="bookingTable"></tbody>
+        </table>
+    </div>
+    <p id="assignMsg" class="assignMsg"></p>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Author: Poyan Payandeh
+   Student ID: SwM6076 
+   CSS styles for booking.html */
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+body {
+  font-family: "Lora", serif;
+  background-color: #DDD0C8;
+  font-size: 16px;
+  color: #323232;
+  /* Beige (#DDD0C8), dark grey (#323232) */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 280px;
+    color: #DDD0C8;
+    background-color: #323232;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+}
+
+.button {
+    border-radius: 20px;   
+    width: 220px;
+    height: 40px;
+}
+
+.button:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.confirmation {
+    background-color: #323232;
+    color: #DDD0C8;
+    height: 160px;
+    width: 500px;
+    border: 1;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+p {
+    display: inline;
+}

@@ -1,0 +1,50 @@
+<!-- Author: Poyan Payandeh
+Student ID: SWM6076
+This file provides the client the user interace to interact with admin.js fiile -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="booking.css">
+    <title>CabsOnline</title>
+  </head>
+  <body>
+    <h1 class="header">Cabs Online - Booking</h1>
+    <hr>
+    <form id="bookingForm">
+      <div class="form">
+        <div id="in">
+        <label>Customer Name: <input type="text" name="cname" id="cname" class="inputs" required/></label>
+        <label>Phone Number: <input type="text" name="phone" id="phone" class="inputs" required minlength="10" maxlength="12"/></label>
+        <label>Unit Number: <input type="text" name="unumber" id="unumber" class="inputs"/></label>
+        <label>Street Number: <input type="text" name="snumber" id="snumber" class="inputs" required/></label>
+        <label>Street Name: <input type="text" name="stname" id="stname" class="inputs" required /></label>
+        <label>Suburb: <input type="text" name="sbname" id="sbname" class="inputs"/></label>
+        <label>Destination Suburb: <input type="text" name="dstname" id="dstname" class="inputs"/></label>
+        <label>Date: <input type="date" name="date" id="date" value="" class="inputs" required/></label>
+        <label>Time: <input type="time" name="time" id="time" value="" class="inputs" required/></label>
+        <input type="submit" value="Book" name="submit" class="button"/>
+        </div>
+        <br>
+        <div class="confirmation" id="reference">
+          <h3>Thank you for your Booking!</h3>
+          <div>
+            <p>Booking reference number:</p>
+            <p id="bkNum">Hello</p>
+          </div>
+          <div>
+            <p>Pickup Time:</p>
+            <p id="timeMsg">Hello</p>
+          </div>
+          <div>
+            <p>Pickup date:</p>
+            <p id="dateMsg">Hello</p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="booking.js"></script>
+  </body>
+</html>
